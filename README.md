@@ -16,20 +16,22 @@ To write and execute an Assembly language program for finding the square of a gi
 
 ## PROGRAM
 ```
-
-
-
-
-
-
-
-
-
+ORG 00H
+MOV DPTR,#4500H
+MOV A,@DPTR
+MOV B,A
+MUL AB
+INC DPTR
+MOVX @DPTR,A
+INC DPTR
+MOV A,B
+MOVX @DPTR,A
+END
 ```
 
 ## OUTPUT
-
-
+<img width="1588" height="695" alt="image" src="https://github.com/user-attachments/assets/1f40ef35-d3c1-4f73-a41c-66f800aaa7d5" />
+<img width="1535" height="657" alt="image" src="https://github.com/user-attachments/assets/ce868b25-f7f7-4aae-9b93-5f51bc2fc69f" />
 ## RESULT
 Thus, the square of the given data is calculated using 8051 Keil.
 
